@@ -5,7 +5,7 @@ from PIL import Image
 st.set_page_config(page_title="Anti-Food Waste Recommender", page_icon="🥦", layout="centered")
 
 # Load and display a hero image - should I keep it?
-hero_image = Image.open("food_waste_hero.jpg") 
+hero_image = Image.open("Images/food_waste_hero.jpg") 
 st.image(hero_image, use_container_width=True)
 
 # Title and description
