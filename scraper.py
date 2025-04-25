@@ -139,8 +139,7 @@ def find_next_page(page_refs, next_page, recipes_url):
             clean_href = href.group(0).replace('href="', '').replace('"', '')
 
             if re.search(r'(\d+)', clean_href).group(0) == str(next_page):
-                page_url = urljoin(recipes_url, clean_href.split('/recipes/')[-1])
-                
+                page_url = urljoin(recipes_url, clean_href.split('/recipes/')[-1])                
                 return page_url
     
     else:
@@ -175,7 +174,7 @@ def go_to_next_page(recipes_url, next_page):
         return None
 
 # Read all the recipes from the website
-def read_all_recipes_on_url(recipes_url):
+def read_all_recipes_on_url(website_url):
     """
     Read all the recipes from the website.
     Args:
@@ -185,6 +184,19 @@ def read_all_recipes_on_url(recipes_url):
     """
     curr_page = 1   # Set current page and increment it by 1 for each page
     last_page = False
+
+    # Some URLs end with a '/' and some do not, so we need to remove it; it is added when joining with '/recipes/'
+    if website_url[-1] == '/':
+        website_url = website_url[:-1]
+    
+    try:
+        recipes_url = website_url+'/recipes/'
+        page_response = requests.get(recipes_url) # Throws an error if the page does not exist
+        if page_response.status_code != 200:
+            raise Exception(f"Page not found: {recipes_url}")
+    except:
+        print(f"Error accessing {recipes_url}. Trying the base URL.")
+        recipes_url = website_url
 
     all_recipes = []
 
@@ -196,7 +208,7 @@ def read_all_recipes_on_url(recipes_url):
             if curr_page == 1:
                 page_url = recipes_url
             else:
-                page_url = go_to_next_page(page_url, curr_page)
+                page_url = go_to_next_page(recipes_url, curr_page)
             
             print(f'Page {curr_page}: {page_url}')
             recipes = read_recipes_on_page(page_url)
@@ -237,9 +249,15 @@ def get_all_website_urls():
 
         # Checks to make sure we only extract cooking websites
         if 'rel="nofollow"' in item and 'https' in item and not any(val in item for val in ['pypi', 'github', 'pepy', 'python', 'project']):
-            href = re.search(r'(href="[^"]*")', item)
-            clean_href = href.group(0).replace('href="', '').replace('"', '')
-            websites.append(clean_href)
+            # Check whether website is in english
+            if '.com/' in item or '.co.uk/' in item:
+                # Manual addition of website since the url does not properly extract the website
+                if 'justonecookbook' in item:
+                    websites.append('https://www.justonecookbook.com/')
+                else:
+                    href = re.search(r'(href="[^"]*")', item)
+                    clean_href = href.group(0).replace('href="', '').replace('"', '')
+                    websites.append(clean_href)
     
     return websites
 
@@ -247,8 +265,11 @@ def get_all_website_urls():
 # Define main function to run the scraper
 def main():
     
+    website_count = 0
+
     # Get all website URLs
-    websites = get_all_website_urls()
+    # websites = get_all_website_urls()
+    websites = ['https://www.archanaskitchen.com/']
 
     # Store all recipes
     all_recipes = []
@@ -265,22 +286,28 @@ def main():
             if recipes:
                 all_recipes.extend(recipes)
                 print(f"Scraped {len(recipes)} recipes from {website}.")
+                website_count += 1
             else:
                 print(f"No recipes found on {website}.")
     
-    # Make a dataframe from the recipes
-    df = pd.DataFrame.from_records(all_recipes)
-    # Drop duplicate recipes based on the title
-    df_sub = df.drop_duplicates(subset=['Title'], keep='first')
-    # Make sure all columns are populated for a recipe
-    df_clean = df_sub[(df_sub['Title']!='None')&(len(df_sub['Ingredients'])!=0)&(df_sub['Instructions']!='')].reset_index(drop=True)
+    if len(all_recipes) == 0:
+        print("No recipes found in any of the websites!!")
+        return None
+    else:
+        print(f"Scraped {len(all_recipes)} recipes from {website_count} different websites.")
+        # Make a dataframe from the recipes
+        df = pd.DataFrame.from_records(all_recipes)
+        # Drop duplicate recipes based on the title
+        df_sub = df.drop_duplicates(subset=['Title'], keep='first')
+        # Make sure all columns are populated for a recipe
+        df_clean = df_sub[(df_sub['Title']!='None')&(len(df_sub['Ingredients'])!=0)&(df_sub['Instructions']!='')].reset_index(drop=True)
 
-    # Convert df to csv file
-    if not os.path.exists('recipes'):
-        os.makedirs('recipes')
-    df_clean.to_csv('recipes/recipes.csv', index=False)
+        # Convert df to csv file
+        if not os.path.exists('recipes'):
+            os.makedirs('recipes')
+        df_clean.to_csv('recipes/recipes.csv', index=False)
 
-    return df_clean
+        return df_clean
 
 
 if __name__ == "__main__":
