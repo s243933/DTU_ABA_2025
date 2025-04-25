@@ -268,8 +268,8 @@ def main():
     website_count = 0
 
     # Get all website URLs
-    # websites = get_all_website_urls()
-    websites = ['https://www.archanaskitchen.com/']
+    websites = get_all_website_urls()
+    # websites = ['https://www.archanaskitchen.com/']   # test website
 
     # Store all recipes
     all_recipes = []
