@@ -1,9 +1,0 @@
-Package                      Version
----------------------------- -----------
-recipe-scrapers-ap-fork      14.24.7
-requests                     2.32.3
-bs4                          0.0.1
-urllib3                      1.26.20
-pandas                       2.2.3
-regex                        2024.11.6
-tqdm                         4.67.0

@@ -1,0 +1,127 @@
+#!/bin/bash
+
+# -- Set the job name ---
+#BSUB -J RecipeBatchTest
+
+# -- Choose the queue --
+#BSUB -q gpua100
+
+# -- Request GPU resources --
+# Request 1 GPU in exclusive process mode
+#BSUB -gpu "num=1:mode=exclusive_process"
+
+# -- Specify memory per job --
+# Requesting 24GB to be safe and accommodate the model and data.
+#BSUB -R "rusage[mem=24GB]"
+
+# -- Notify by email --
+# Send email when the job begins and ends
+#BSUB -B -N
+
+# -- Specify your email address --
+# Replace with your actual DTU email
+#BSUB -u s233185@dtu.dk
+
+# -- Output and Error files --
+# %J is replaced by the job ID
+#BSUB -o logs/batch_test_%J.out
+#BSUB -e logs/batch_test_%J.err
+
+# -- Estimated wall clock time (maximum execution time): HH:MM --
+# Request 1 hour 
+#BSUB -W 01:00
+
+# -- Number of tasks/cores requested --
+#BSUB -n 4
+
+# -- Specify the distribution of tasks: on a single node --
+# Ensure the task runs on one node
+#BSUB -R "span[hosts=1]"
+
+# -- End of LSF directives --
+
+# --- Setup ---
+echo "Starting LSF job: $LSB_JOBID on host: $(hostname)"
+echo "Current directory: $(pwd)"
+
+# Define paths for input and output files for this test run
+# Make sure these paths are correct relative to where you submit the job
+# or use absolute paths on the shared file system.
+INPUT_CSV="test_batch_0001.csv"
+OUTPUT_CSV="LLM/testing_batch_results/results_test_batch_0001.csv" # Output to a new directory for results
+
+# Define the directory where the output CSV will be saved
+OUTPUT_DIR=$(dirname "$OUTPUT_CSV")
+
+# Create the output directory if it doesn't exist
+# -p flag creates parent directories as needed and doesn't error if directory exists
+echo "Ensuring output directory exists: $OUTPUT_DIR"
+mkdir -p "$OUTPUT_DIR"
+MKDIR_STATUS=$?
+if [ $MKDIR_STATUS -ne 0 ]; then
+    echo "Error: Failed to create output directory. Exit status: $MKDIR_STATUS"
+    exit 1
+fi
+echo "Output directory ready."
+
+
+# Load necessary modules
+echo "Loading modules..."
+
+module load python3/3.11.9 
+# Load the exact available CUDA module version
+module load cuda/12.8.0
+echo "Modules loaded."
+
+# --- Python Environment Setup ---
+# Add user-installed packages to PATH and PYTHONPATH
+# This is needed if you used 'pip3 install --user'
+echo "Updating PATH and PYTHONPATH for user installs..."
+export PATH="$HOME/.local/bin:$PATH"
+export PYTHONPATH="$HOME/.local/lib/python$(python3 -c 'import sys; print(f"{sys.version_info.major}.{sys.version_info.minor}")')/site-packages:$PYTHONPATH"
+echo "PATH and PYTHONPATH updated."
+
+# --- Install Python Libraries (Commented Out - Do this once outside the job) ---
+# Only do this if you cannot set up a persistent environment.
+# It adds overhead and potential network issues to every job.
+# echo "Installing Python libraries..."
+# pip3 install --user transformers torch torchvision torchaudio accelerate bitsandbytes pandas
+# INSTALL_STATUS=$?
+# if [ $INSTALL_STATUS -ne 0 ]; then
+#     echo "Error: Failed to install Python libraries. Exit status: $INSTALL_STATUS"
+#     echo "Check error log for details."
+#     exit 1
+# fi
+# echo "Library installation complete."
+
+
+# Check GPU availability for diagnostics (Optional, but good for debugging)
+echo "Checking for GPU availability:"
+python3 -c "import torch; print('CUDA available:', torch.cuda.is_available()); print('Number of GPUs:', torch.cuda.device_count()); print('GPU device name:', torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'No GPU')"
+
+# --- Run Your Python Script ---
+# Execute the process_batch.py script, passing input and output file paths as arguments
+echo "Running Python script: process_batch.py"
+echo "Input: $INPUT_CSV"
+echo "Output: $OUTPUT_CSV"
+
+# Make sure the path to your process_batch.py script is correct
+PYTHON_SCRIPT="process_batch.py" # Adjust path if script is not in the submission directory
+
+# Use the python3 command loaded by the module
+python3 "$PYTHON_SCRIPT" "$INPUT_CSV" "$OUTPUT_CSV"
+PYTHON_EXIT_STATUS=$?
+
+# --- Check Python Script Exit Status ---
+if [ $PYTHON_EXIT_STATUS -ne 0 ]; then
+    echo "Error: Python script failed with exit status: $PYTHON_EXIT_STATUS"
+    echo "Check the error log ($LSB_JOBID.err) for details."
+    # Exit the job script with the same error status
+    exit $PYTHON_EXIT_STATUS
+fi
+
+# --- Cleanup ---
+echo "Job finished successfully."
+
+# Exit the job script successfully
+exit 0

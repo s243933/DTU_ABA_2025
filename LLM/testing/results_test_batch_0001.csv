@@ -1,0 +1,189 @@
+title,ingredients_raw,ingredients_processed,instructions,language,heat_processed,cuisine_tags,vegan,vegetarian,processing_error
+Easy Salad Recipes: Chopped Salad & More,"['1 recipe Homemade Italian Dressing', '1 Romaine heart (3 cups)', '5 cups leafy lettuce', '1 large shallot', '1 English cucumber (2 cups chopped)', '1/2 cup cherry tomatoes', '1/2 cup ripe green olives, halved', '1/2 cup jarred sliced pepperoncini', '1/4 cup Parmesan shavings or shreds, plus more to serve', '1/4 teaspoon red pepper flakes, optional']","{
+  ""heat_processing"": [
+    {""ingredient"": ""Romaine heart"", ""heat_processed"": false},
+    {""ingredient"": ""leafy lettuce"", ""heat_processed"": false},
+    {""ingredient"": ""shallot"", ""heat_processed"": false},
+    {""ingredient"": ""English cucumber"", ""heat_processed"": false},
+    {""ingredient"": ""cherry tomatoes"", ""heat_processed"": false},
+    {""ingredient"": ""green olives"", ""heat_processed"": false},
+    {""ingredient"": ""pepperoncini"", ""heat_processed"": false},
+    {""ingredient"": ""Parmesan shavings"", ""heat_processed"": false},
+    {""ingredient"": ""red pepper flakes"", ""heat_processed"": false}
+  ],
+  ""cuisine_types"": [""Italian"", ""Fusion"", ""Diaspora""]
+}","Make the Homemade Italian Dressing.
+Chop romaine and lettuce. Thinly slice the shallot. Peel and chop cucumber. Slice tomatoes and olives in half.
+Mix together all the ingredients for the salad, including the dressing, and toss to combine. If making in advance, refrigerate the components separately; bring the dressing to room temperature before serving.",en,True,"[""Italian"", ""Fusion"", ""Diaspora""]",False,False,
+30 Easy Salad Dressing Recipes,"['2 tablespoons aged balsamic vinegar', '2 tablespoons Dijon mustard', '1 tablespoon maple syrup (or honey)', '¼ teaspoon kosher salt', '6 tablespoons olive oil', '2 tablespoons white wine vinegar', '2 teaspoons Dijon mustard', '1 teaspoon sugar', '1 small garlic clove, minced (about ¼ teaspoon) or ½ teaspoon garlic powder', '½ teaspoon each dried oregano, dried thyme, and dried basil', '¼ teaspoon kosher salt', '6 tablespoons olive oil', '1 medium clove garlic', '¼ cup Parmesan cheese, finely grated', '2 tablespoons lemon juice (1/2 lemon)', '¼ cup mayonnaise', '½ cup Greek yogurt', '1 tablespoon olive oil', '1 teaspoon anchovy paste (optional but recommended)', '1 ½ teaspoons Dijon mustard', '¼ teaspoon each kosher salt and fresh ground black pepper']","{
+  ""heat_processing"": [
+    {""ingredient"": ""balsamic vinegar"", ""heat_processed"": false},
+    {""ingredient"": ""Dijon mustard"", ""heat_processed"": false},
+    {""ingredient"": ""maple syrup"", ""heat_processed"": false},
+    {""ingredient"": ""white wine vinegar"", ""heat_processed"": false},
+    {""ingredient"": ""garlic"", ""heat_processed"": true},
+    {""ingredient"": ""oregano"", ""heat_processed"": false},
+    {""ingredient"": ""thyme"", ""heat_processed"": false},
+    {""ingredient"": ""basil"", ""heat_processed"": false},
+    {""ingredient"": ""lemon"", ""heat_processed"": false},
+    {""ingredient"": ""Parmesan cheese"", ""heat_processed"": false},
+    {""ingredient"": ""olive oil"", ""heat_processed"": true},
+    {""ingredient"": ""anchovy paste"", ""heat_processed"": false},
+    {""ingredient"": ""mayonnaise"", ""heat_processed"": true},
+    {""ingredient"": ""Greek yogurt"", ""heat_processed"": false}
+  ],
+  ""cuisine_types"": [""Italian"", ""French"", ""American""]
+}","For the balsamic vinaigrette
+In a medium bowl, whisk together the balsamic vinegar, Dijon mustard, maple syrup, and salt until fully combined. Gradually whisk in the olive oil, adding 1 tablespoon at a time and whisking until it incorporates, until an emulsion forms. Serve immediately. Makes 3/4 cup. Store refrigerated and bring to room temperature before serving (keeps at least 2 weeks).
+For the Italian dressing
+In a medium bowl, whisk together the white wine vinegar, Dijon mustard, sugar, garlic, oregano, thyme, basil, and kosher salt. Gradually whisk in the olive oil, adding 1 tablespoon at a time and whisking until it incorporates, until an emulsion forms. Serve immediately. Makes 1/2 cup. Store refrigerated and bring to room temperature before serving (keeps at least 2 weeks).
+For the Caesar dressing
+Mince or grate the garlic. Grate the Parmesan cheese as finely as possible (it’s helpful to use a microplane or the fine holes on a grater). Juice the lemon. Whisk together all the ingredients in a bowl. Makes 1 cup. Store refrigerated (keeps at least 1 week).",en,True,"[""Italian"", ""French"", ""American""]",False,False,
+21 Green Salad Recipes,"['1 recipe Homemade Italian Dressing', '1 Romaine heart (3 cups)', '5 cups leafy lettuce', '1 large shallot', '1 English cucumber (2 cups chopped)', '1/2 cup cherry tomatoes', '1/2 cup ripe green olives, halved', '1/2 cup jarred sliced pepperoncini', '1/4 cup Parmesan shavings or shreds, plus more to serve', '1/4 teaspoon red pepper flakes, optional']","{
+  ""heat_processing"": [
+    {""ingredient"": ""Romaine heart"", ""heat_processed"": false},
+    {""ingredient"": ""leafy lettuce"", ""heat_processed"": false},
+    {""ingredient"": ""shallot"", ""heat_processed"": false},
+    {""ingredient"": ""English cucumber"", ""heat_processed"": false},
+    {""ingredient"": ""cherry tomatoes"", ""heat_processed"": false},
+    {""ingredient"": ""green olives"", ""heat_processed"": false},
+    {""ingredient"": ""pepperoncini"", ""heat_processed"": false},
+    {""ingredient"": ""Parmesan shavings"", ""heat_processed"": false},
+    {""ingredient"": ""red pepper flakes"", ""heat_processed"": false}
+  ],
+  ""cuisine_types"": [""Italian"", ""Fusion"", ""Diaspora""]
+}","Make the Homemade Italian Dressing.
+Chop romaine and lettuce. Thinly slice the shallot. Peel and chop cucumber. Slice tomatoes and olives in half.
+Mix together all the ingredients for the salad, including the dressing, and toss to combine. If making in advance, refrigerate the components separately; bring the dressing to room temperature before serving.",en,True,"[""Italian"", ""Fusion"", ""Diaspora""]",False,False,
+Winter Salad with Pear & Greens,"['1 head radicchio, washed, dried and torn into bite-sized pieces', '1 head butter lettuce, washed, dried and torn into bite-sized pieces or 2 cups baby arugula or baby mizuna', '1 ripe pear, thinly sliced', '1 shallot, thinly sliced', '2 tablespoons toasted almonds (or pine nuts)', '1/4 cup goat cheese crumbles (or feta or gorgonzola), optional', '1 handful fresh mint leaves', '2 tablespoons white wine vinegar', '1 tablespoon Dijon mustard', '1 tablespoon orange zest', '2 tablespoons honey or maple syrup', '¼ teaspoon kosher salt', '½ cup olive oil']","{
+  ""heat_processing"": [
+    {""ingredient"": ""radicchio"", ""heat_processed"": false},
+    {""ingredient"": ""butter lettuce"", ""heat_processed"": false},
+    {""ingredient"": ""pear"", ""heat_processed"": false},
+    {""ingredient"": ""shallot"", ""heat_processed"": false},
+    {""ingredient"": ""almonds"", ""heat_processed"": false},
+    {""ingredient"": ""goat cheese"", ""heat_processed"": false},
+    {""ingredient"": ""mint leaves"", ""heat_processed"": false},
+    {""ingredient"": ""white wine vinegar"", ""heat_processed"": false},
+    {""ingredient"": ""Dijon mustard"", ""heat_processed"": false},
+    {""ingredient"": ""orange zest"", ""heat_processed"": false},
+    {""ingredient"": ""honey"", ""heat_processed"": false},
+    {""ingredient"": ""olive oil"", ""heat_processed"": false}
+  ],
+  ""cuisine_types"": [""Italian"", ""French"", ""Fusion""]
+}","Make the dressing: In a medium bowl, whisk together the white wine vinegar, Dijon mustard, orange zest, honey, and kosher salt. Gradually whisk in the olive oil 1 tablespoon at a time until a creamy dressing forms. Store refrigerated; the dressing will solidify when cooled so bring to room temperature before serving.
+Toast the nuts.
+Prepare the radicchio, butter lettuce (if using), pear, shallot as noted above.
+On a large platter or on salad plates, place the radicchio pieces and butter lettuce or baby arugula or mizuna. Add the pear slices, then sprinkle over the sliced shallot, toasted nuts, goat cheese crumbles, and mint leaves. Drizzle with the orange dressing and serve.",en,True,"[""Italian"", ""French"", ""Fusion""]",False,True,
+15 Easy Vegan Salads,"['1/2 recipe Homemade Croutons', '1 romaine heart (3 cups chopped)', '5 cups mixed greens', '1/4 small red onion', '1 to 2 green onions (thinly sliced)', '1/2 cucumber (1 cup peeled and chopped)', '1 carrot (shredded)', '4 radishes (thinly sliced and halved)', '1/4 cup pepperoncini', '1/4 cup sunflower seeds', 'Sea salt, for garnish', 'Pick one Vegan Salad Dressing: Creamy Avocado Dressing (shown here), Best Balsamic Vinaigrette, Vegan Ranch Dressing, Dijon Mustard Dressing, Italian Dressing, Greek Dressing, Citrus Salad Dressing or Lemon Vinaigrette']","{
+  ""heat_processing"": [
+    {""ingredient"": ""Homemade Croutons"", ""heat_processed"": true},
+    {""ingredient"": ""romaine heart"", ""heat_processed"": false},
+    {""ingredient"": ""mixed greens"", ""heat_processed"": false},
+    {""ingredient"": ""red onion"", ""heat_processed"": false},
+    {""ingredient"": ""green onions"", ""heat_processed"": false},
+    {""ingredient"": ""cucumber"", ""heat_processed"": false},
+    {""ingredient"": ""carrot"", ""heat_processed"": false},
+    {""ingredient"": ""radishes"", ""heat_processed"": false},
+    {""ingredient"": ""pepperoncini"", ""heat_processed"": false},
+    {""ingredient"": ""sunflower seeds"", ""heat_processed"": false},
+    {""ingredient"": ""Creamy Avocado Dressing"", ""heat_processed"": false},
+    {""ingredient"": ""Best Balsamic Vinaigrette"", ""heat_processed"": false},
+    {""ingredient"": ""Vegan Ranch Dressing"", ""heat_processed"": false},
+    {""ingredient"": ""Dijon Mustard Dressing"", ""heat_processed"": false},
+    {""ingredient"": ""Italian Dressing"", ""heat_processed"": false},
+    {""ingredient"": ""Greek Dressing"", ""heat_processed"": false},
+    {""ingredient"": ""Citrus Salad Dressing"", ""heat_processed"": false},
+    {""ingredient"": ""Lemon Vinaigrette"", ""heat_processed"": false}
+  ],
+  ""cuisine_types"": [""Salad"", ""Vegan"", ""Fusion""]
+}","If using, make the Homemade Croutons.
+Wash and chop the romaine. If necessary, wash the mixed greens. (You can use any mix of greens here; measure about 2 cups of greens per serving.)
+Thinly slice the red onion. Thinly slice the green onion.
+Peel and chop the cucumber. Shred the carrot (we used this Handheld Julienne Shredder). Thinly slice and half the radishes.
+Choose and make the dressing (select from the dressing recipes above!).
+Toss together the greens, red onion, green onion, cucumber, carrot, radishes, and pepperoncini. Top with sunflower seeds and croutons, and drizzle with dressing.",en,False,"[""Salad"", ""Vegan"", ""Fusion""]",False,False,
+25 Healthy Side Dishes,"['2 multi-colored bell peppers (we used red and yellow)', '1 medium red onion', '1 large carrot', '1 head broccoli (8 ounces, stem on)', '2 tablespoons olive oil, divided', '1 teaspoon dried oregano', '1/2 teaspoon kosher salt', 'Fresh ground black pepper']","{
+  ""heat_processing"": [
+    {""ingredient"": ""multi-colored bell peppers"", ""heat_processed"": true},
+    {""ingredient"": ""red onion"", ""heat_processed"": true},
+    {""ingredient"": ""carrot"", ""heat_processed"": true},
+    {""ingredient"": ""broccoli"", ""heat_processed"": true}
+  ],
+  ""cuisine_types"": [""Mediterranean"", ""American"", ""Island""]
+}","Thinly slice the peppers. Slice the onion. Cut the carrot into thin rounds, on the bias. Cut the broccoli into small florets.
+Toss the vegetables in a bowl with 1 tablespoon olive oil and the oregano, kosher salt and plenty of fresh ground black pepper.
+In large skillet, heat the remaining 1 tablespoon olive oil over medium high heat. Cook for 10 to 12 minutes until tender and lightly charred, stirring occasionally. Taste and add a few pinches of additional salt to taste. Serve immediately.",en,True,"[""Mediterranean"", ""American"", ""Island""]",True,True,
+40 Vegetable Side Dishes to Make on Repeat,"['1 teaspoon garlic powder', '1 teaspoon dried oregano', '1 teaspoon kosher salt', '2 pounds sweet potatoes, small to medium sized (size is important!*)', '2 tablespoons olive oil']","{
+  ""heat_processing"": [
+    {""ingredient"": ""garlic powder"", ""heat_processed"": false},
+    {""ingredient"": ""dried oregano"", ""heat_processed"": false},
+    {""ingredient"": ""kosher salt"", ""heat_processed"": false},
+    {""ingredient"": ""sweet potatoes"", ""heat_processed"": true},
+    {""ingredient"": ""olive oil"", ""heat_processed"": false}
+  ],
+  ""cuisine_types"": [""American"", ""Southern"", ""Mediterranean""]
+}","Preheat the oven to 450°F.
+In a small bowl, mix the spices and salt together. (Variation: If you want a crispier sweet potato wedge, add 3 tablespoons cornstarch here.) Wash the sweet potatoes, keeping the skins on. Slice the potatoes into short wedges by doing the following: slice each potato in half crosswise, then in half lengthwise. Place each piece cut side down and slice it in half. Then flip them over and cut that piece down the center into two wedges (see this video, but cut them in half). In a large bowl, mix the potatoes with the olive oil and spices.
+Line a baking sheet with parchment paper, and spread the potatoes on the sheet in a single layer. Roast the potatoes for 30 to 35 minutes until tender and starting to become crisped and brown (no need to stir).",en,True,"[""American"", ""Southern"", ""Mediterranean""]",True,True,
+Grilled Side Dishes: Veggie Skewers & More!,"['1 red onion', '3 multi-colored bell peppers', '1 small zucchini', '8 ounces baby bella (cremini) mushrooms (or button mushrooms)', '1 pint cherry tomatoes', '3 tablespoons olive oil', '½ teaspoon each* garlic powder, onion powder, dried oregano, smoked paprika, and kosher salt', 'Fresh ground black pepper, to taste', 'Optional: lemon wedges']","{
+  ""heat_processing"": [
+    {""ingredient"": ""red onion"", ""heat_processed"": true},
+    {""ingredient"": ""multi-colored bell peppers"", ""heat_processed"": true},
+    {""ingredient"": ""small zucchini"", ""heat_processed"": true},
+    {""ingredient"": ""baby bella (cremini) mushrooms"", ""heat_processed"": true},
+    {""ingredient"": ""cherry tomatoes"", ""heat_processed"": true},
+    {""ingredient"": ""olive oil"", ""heat_processed"": true},
+    {""ingredient"": ""garlic powder"", ""heat_processed"": false},
+    {""ingredient"": ""onion powder"", ""heat_processed"": false},
+    {""ingredient"": ""dried oregano"", ""heat_processed"": false},
+    {""ingredient"": ""smoked paprika"", ""heat_processed"": false},
+    {""ingredient"": ""kosher salt"", ""heat_processed"": false},
+    {""ingredient"": ""fresh ground black pepper"", ""heat_processed"": false},
+    {""ingredient"": ""lemon wedges"", ""heat_processed"": false}
+  ],
+  ""cuisine_types"": [""Italian"", ""Mediterranean"", ""Fusion""]
+}","Preheat a grill to medium-high heat (375 to 450 degrees).
+If using wooden skewers, soak them at least 20 minutes.
+Chop the onion into large pieces. Cut bell peppers into chunks. Slice the zucchini into rounds 1/4-inch to 3/8-inch thick. Add the sliced veggies to a bowl with the whole mushrooms and tomatoes toss everything with the olive oil, spices, and salt.
+Skewer the vegetables and place each skewers on a baking sheet. Sprinkle with a few more pinches kosher salt and fresh ground black pepper.
+Place the skewers directly on the grill. Grill 10 to 12 minutes until tender and blackened, turning every few minutes. If desired, spritz with lemon wedges before serving.",en,True,"[""Italian"", ""Mediterranean"", ""Fusion""]",True,True,
+50 Easy Appetizer Recipes Everyone Will Love,"['10 ounces frozen spinach', '1/4 cup minced shallot', '2 green onions', '14 ounce can (8.5 ounce dry weight) quartered artichokes', '1 1/2 cups Greek yogurt', '1/2 cup mayonnaise', '3/4 cup shredded Parmesan cheese, plus more for topping', '1/4 teaspoon dried dill', '1/2 teaspoon garlic powder', '1/2 teaspoon kosher salt', '1/4 teaspoon ground black pepper', 'Paprika, for sprinkling', 'For serving: pita chips or bread']","{
+  ""heat_processing"": [
+    {""ingredient"": ""10 ounces frozen spinach"", ""heat_processed"": true},
+    {""ingredient"": ""1/4 cup minced shallot"", ""heat_processed"": true},
+    {""ingredient"": ""2 green onions"", ""heat_processed"": true},
+    {""ingredient"": ""14 ounce can (8.5 ounce dry weight) quartered artichokes"", ""heat_processed"": true},
+    {""ingredient"": ""1/2 cup mayonnaise"", ""heat_processed"": true},
+    {""ingredient"": ""3/4 cup shredded Parmesan cheese"", ""heat_processed"": true},
+    {""ingredient"": ""1/4 teaspoon dried dill"", ""heat_processed"": false},
+    {""ingredient"": ""1/2 teaspoon garlic powder"", ""heat_processed"": false},
+    {""ingredient"": ""1/2 teaspoon kosher salt"", ""heat_processed"": false},
+    {""ingredient"": ""1/4 teaspoon ground black pepper"", ""heat_processed"": false},
+    {""ingredient"": ""Paprika"", ""heat_processed"": false},
+    {""ingredient"": ""For serving: pita chips or bread"", ""heat_processed"": false}
+  ],
+  ""cuisine_types"": [""Mediterranean"", ""American"", ""Greek""]
+}","Preheat the oven to 350 degrees Fahrenheit.
+Thaw the spinach. Then use a strainer to squeeze out as much moisture as possible.
+Mince the shallot. Thinly slice the green onions. Roughly chop the artichokes.
+In a medium bowl, mix together the spinach, shallot, green onions, and artichokes with the Greek yogurt, mayonnaise, Parmesan cheese, dried dill, garlic powder, salt and pepper. Taste and add a few pinches kosher salt if desired.
+Spread the dip in an even layer in a small baking dish. Top with a sprinkle of shredded Parmesan (and if desired, a sprinkle of paprika). Bake for 20 minutes.
+Serve warm with pita chips.",en,True,"[""Mediterranean"", ""American"", ""Greek""]",False,True,
+40 Fun Party Food Ideas,"['8 ounces cream cheese, softened*', '1 cup Greek yogurt (or sour cream)', '3/4 cup salsa', '2 teaspoons each cumin and chili powder', '3/4 teaspoon kosher salt', '1/2 teaspoon each garlic powder, onion powder, and black pepper', '1 cup Mexican blend cheese', '1 cup chopped iceberg lettuce', '1 tomato, chopped', '1/4 cup sliced black olives', 'Optional toppings: minced red onion, chopped cilantro, pickled jalapeños']","{
+  ""heat_processing"": [
+    {""ingredient"": ""cream cheese"", ""heat_processed"": false},
+    {""ingredient"": ""Greek yogurt"", ""heat_processed"": false},
+    {""ingredient"": ""salsa"", ""heat_processed"": false},
+    {""ingredient"": ""Mexican blend cheese"", ""heat_processed"": false},
+    {""ingredient"": ""chopped iceberg lettuce"", ""heat_processed"": false},
+    {""ingredient"": ""chopped tomato"", ""heat_processed"": false},
+    {""ingredient"": ""sliced black olives"", ""heat_processed"": false},
+    {""ingredient"": ""minced red onion"", ""heat_processed"": false},
+    {""ingredient"": ""chopped cilantro"", ""heat_processed"": false},
+    {""ingredient"": ""pickled jalapeños"", ""heat_processed"": false}
+  ],
+  ""cuisine_types"": [""Mexican"", ""American"", ""Fusion""]
+}","In a large bowl, whisk the softened cream cheese, Greek yogurt, salsa and spices until it’s fully smooth. The mixture will start out chunky, but keep whisking until the cream cheese is fully smooth. (It takes a few minutes, so be patient!)
+Place the cheese mixture in the bottom of a circular glass pie plate or other circular dish. Smooth into an even layer.
+Top with the cheese, chopped lettuce, chopped tomato, black olives, and other optional toppings. Serve immediately with tortilla chips, or refrigerate until serving. (Leftovers last up to 3 days refrigerated.)",en,False,"[""Mexican"", ""American"", ""Fusion""]",False,True,
