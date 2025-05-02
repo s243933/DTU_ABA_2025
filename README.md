@@ -1,4 +1,4 @@
-![Alt text](app/food_waste_hero.jpg?raw=true "Title")
+![Alt text](app/anti_food_waste_hero.jpg?raw=true "Title")
 
 # Anti-Food Waste Recommendation System
 
@@ -33,7 +33,7 @@ In order to access our recipe recommendation system, clone the repository, and r
   
 - **`app/`**: the files related to our front-end interface.
   - `app.py`: the implementation of the front-end streamlit interface that users can interact with and get recipe recommendations.
-  - `food_waste_hero.jpg`: the banner for our project and the front-end.
+  - `anti_food_waste_hero.jpg`: the banner for our project and the front-end.
   
 - **`recipes/`**: the outputs from scraping recipes.
     - `english_recipes.csv`: a subset of only English recipes from the overall scraped recipes.
