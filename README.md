@@ -1,4 +1,4 @@
-![Alt text](app/anti_food_waste_hero.jpg?raw=true "Title")
+![Alt text](app/anti_food_waste_hero.png?raw=true "Title")
 
 # Anti-Food Waste Recommendation System
 
