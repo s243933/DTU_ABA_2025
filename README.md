@@ -11,44 +11,37 @@ Food waste is a serious global issue, with huge amount of edible food thrown awa
 ### Folders
 
 - **`LLM/`**: contains items related to the LLM usage within the project.
-  - **`batched_recipes/`**:
-  - **`batched_recipes_results/`**:
-  - **`tesing/`**:
-  - **`testing_batch/`**:
-  - `merged_final_results.csv`:
-  - `process_batch.py`:
-  - `recipes_table_prep.ipynb`:
-  - `run_batch_array.sh`:
+  - **`batched_recipes/`**: all of the batched pieces of all recipes. There have 200 recipes in each `csv` file within the folder, hence, there are 18 `csv` files.
+    - `recipes_batch_00xx.csv`: contains 200 recipes extracted from the scraping.
+  - **`batched_recipes_results/`**: output files after LLM analysis. It consists of 12 `csv` files.
+    - `recipes_batch_00xx.csv`: contains the recipes' data *after* LLM analysis.
+  - **`tesing/`**: files used to check if the HPC works as intended.
+    - `recipes_batch_0001.csv`: ?? (one of the batched recipe files used for testing.)
+    - `results_test_batch_0001.csv`: ?? (the result of the testing HPC.)
+    - `run_test_batch.lsf`: ?? (the instructions for the HPC to run the batch through the LLM and put it into a queue.)
+  - **`testing_batch/`**:  two batches retrieved from initial table for testing purposes.
+    - `test_batch_0001.csv`: ??
+    - `test_batch_0002.csv`: ??
+  - `merged_final_results.csv`: resulting table after merging together all of the files from the LLM analysis in **`batched_recipes_results/`**.
+  - `process_batch.py`: the main part of the LLM where the model is run.
+  - `recipes_table_prep.ipynb`: where the prep before LLM was done and also merging together the `csv` files after running the LLM.
+  - `run_batch_array.sh`: the instructions for the HPC to run all of the batches through the LLM and putting them into queues.
   
 - **`app/`**:
-  - `app.py`:
-  - `food_waste_hero.jpg`:
+  - `app.py`: the front-end streamlit interface that users can interact with and get recipe recommendations.
+  - `food_waste_hero.jpg`: the banner for our project and the front-end.
   
-- **`old/`**:
-  - `Kaggle_dataset.csv`:
-  - `receipts_table.csv`:
-  - `receipts_table_prep.ipynb`:
-  - `run_transformers_test_gpu.ipynb`:
-  - `test_transformers_connection.py`:
-  
-- **`recipes/`**:
-    - `english_recipes.csv`:
-    - `recipes.csv`:
+- **`recipes/`**: the outputs from scraping recipes.
+    - `english_recipes.csv`: a subset of only english recipes from the overall scraped recipes.
+    - `recipes.csv`: the initial output from scraping recipes which is a result of executing `scraping/scraper.py`.
 
 - **`scraping/`**:
-  - `PDF scraping & merging.ipynb`:
-  - `get_more_recipes.ipynb`:
-  - `scraper.py`:
-  - `scraper_job.bsub`:
-  - `scraper_requirements.txt`:
+  - `get_more_recipes.ipynb`: the scraping notebook where all functions are documented with descriptions for each function for the scraping functionality. The outputted recipes are also subsetted to get only the recipes that are in English.
+  - `scraper.py`: the python script that is used within the job file for the HPC.
+  - `scraper_job.bsub`: the file used to queue a job to the HPC.
+  - `scraper_requirements.txt`: the libraries used for scraping only.
 
 ### Files
-- `one_pager_group4.pdf`:
-- `report_group4.ipynb`:
-- `executive_summary_group4.pdf`:
-
-
-## How To Use
-
-
-## Example Workflow
+- `one_pager_group4.pdf`: a short abstract explaining our *initial* objective, scope, datasets, and course-related topics to be used within the project.
+- `report_group4.ipynb`: the technical report with descriptions of how the project was executed.
+- `executive_summary_group4.pdf`: a one page file aimed at communicating our project to a non-technical business audience.
