@@ -13,7 +13,7 @@ import streamlit as st
 st.set_page_config(page_title="Anti-Food Waste Recommender", page_icon="🥦", layout="centered")
 
 # Display a motivational image in the beginning of the page
-hero_image = Image.open("app/food_waste_hero.jpg")
+hero_image = Image.open("app/anti_food_waste_hero.png")
 st.image(hero_image, use_container_width=True)
 
 # Title and description
@@ -52,8 +52,8 @@ def match_ingredient(ingredient_name, user_input_ingredient):
         return ing == user_ing  # multi-word: exact match only
 
 # Ask the user if they have any dietary restrictions
-vegan_input = st.radio("Are you vegan? *", ('Yes', 'No'), index=None)
-vegetarian_input = st.radio("Are you vegetarian?*", ('Yes', 'No'), index=None)
+vegan_input = st.radio("Would you like to see only vegan recipes suggestions? *", ('Yes', 'No'), index=None)
+vegetarian_input = st.radio("Would you like to see only vegetarian recipes suggestions?*", ('Yes', 'No'), index=None)
 
 # Set vegan and vegetarian flags only if user made a selection
 vegan = vegan_input == 'Yes' if vegan_input is not None else None
