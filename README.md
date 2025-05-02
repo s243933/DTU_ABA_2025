@@ -20,12 +20,12 @@ In order to access our recipe recommendation system, clone the repository, and r
   - **`batched_recipes_results/`**: output files after LLM analysis. It consists of 12 `csv` files.
     - `recipes_batch_00xx.csv`: contains the recipes' data *after* LLM analysis.
   - **`testing/`**: files used to check if the HPC works as intended.
-    - `recipes_batch_0001.csv`: ?? (one of the batched recipe files used for testing.)
-    - `results_test_batch_0001.csv`: ?? (the result of the testing HPC.)
-    - `run_test_batch.lsf`: ?? (the instructions for the HPC to run the batch through the LLM and put it into a queue.)
+    - `recipes_batch_0001.csv`: one of the batched recipe files used for testing.
+    - `results_test_batch_0001.csv`: the result of the testing HPC.
+    - `run_test_batch.lsf`: the instructions for the HPC to run the batch through the LLM and put it into a queue.
   - **`testing_batch/`**:  two batches retrieved from the initial table for testing purposes.
-    - `test_batch_0001.csv`: ??
-    - `test_batch_0002.csv`: ??
+    - `test_batch_0001.csv`: batch of the 10 first received from the dataset for testing
+    - `test_batch_0002.csv`: the next 10 recipes from initial dataset used for testing
   - `merged_final_results.csv`: resulting table after merging together all of the files from the LLM analysis in **`batched_recipes_results/`**.
   - `process_batch.py`: the main part of the LLM where the model is run.
   - `recipes_table_prep.ipynb`: where the prep before LLM was done, and also merging together the `csv` files after running the LLM.
@@ -36,8 +36,8 @@ In order to access our recipe recommendation system, clone the repository, and r
   - `anti_food_waste_hero.jpg`: the banner for our project and the front-end.
   
 - **`recipes/`**: the outputs from scraping recipes.
-    - `english_recipes.csv`: a subset of only English recipes from the overall scraped recipes.
     - `recipes.csv`: the initial output from scraping recipes, which is a result of executing `scraping/scraper.py`.
+    - `english_recipes.csv`: a subset of only English recipes from the overall scraped recipes.
 
 - **`scraping/`**: the files related to scraping recipes online.
   - `get_more_recipes.ipynb`: the scraping notebook where all functions are documented with descriptions for each function for the scraping functionality. The outputted recipes are also subsetted to get only the recipes that are in English.
