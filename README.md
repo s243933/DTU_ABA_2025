@@ -27,15 +27,15 @@ Food waste is a serious global issue, with huge amount of edible food thrown awa
   - `recipes_table_prep.ipynb`: where the prep before LLM was done and also merging together the `csv` files after running the LLM.
   - `run_batch_array.sh`: the instructions for the HPC to run all of the batches through the LLM and putting them into queues.
   
-- **`app/`**:
-  - `app.py`: the front-end streamlit interface that users can interact with and get recipe recommendations.
+- **`app/`**: the files related to our front-end interface.
+  - `app.py`: the implementation of the front-end streamlit interface that users can interact with and get recipe recommendations.
   - `food_waste_hero.jpg`: the banner for our project and the front-end.
   
 - **`recipes/`**: the outputs from scraping recipes.
     - `english_recipes.csv`: a subset of only english recipes from the overall scraped recipes.
     - `recipes.csv`: the initial output from scraping recipes which is a result of executing `scraping/scraper.py`.
 
-- **`scraping/`**:
+- **`scraping/`**: the files related to scraping recipes online.
   - `get_more_recipes.ipynb`: the scraping notebook where all functions are documented with descriptions for each function for the scraping functionality. The outputted recipes are also subsetted to get only the recipes that are in English.
   - `scraper.py`: the python script that is used within the job file for the HPC.
   - `scraper_job.bsub`: the file used to queue a job to the HPC.
@@ -45,3 +45,4 @@ Food waste is a serious global issue, with huge amount of edible food thrown awa
 - `one_pager_group4.pdf`: a short abstract explaining our *initial* objective, scope, datasets, and course-related topics to be used within the project.
 - `report_group4.ipynb`: the technical report with descriptions of how the project was executed.
 - `executive_summary_group4.pdf`: a one page file aimed at communicating our project to a non-technical business audience.
+- `individual_contributions.pdf`: a file containing contributions of members to the different areas within the project.
