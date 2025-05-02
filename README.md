@@ -49,4 +49,4 @@ In order to access our recipe recommendation system, clone the repository, and r
 - `one_pager_group4.pdf`: a short abstract explaining our *initial* objective, scope, datasets, and course-related topics to be used within the project.
 - `report_group4.ipynb`: the technical report with descriptions of how the project was executed.
 - `executive_summary_group4.pdf`: a one page file aimed at communicating our project to a non-technical business audience.
-- `individual_contributions.pdf`: a file containing contributions of members to the different areas within the project.
+- `individual_contributions_group4.pdf`: a file containing contributions of members to the different areas within the project.
